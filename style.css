@@ -10,8 +10,8 @@ html{
 }
 
 body{
-    background:#f5f7f8;
-    color:#333;
+    background:#f4f6f8;
+    color:#1f2937;
     line-height:1.6;
 }
 
@@ -21,11 +21,13 @@ body{
     margin:auto;
 }
 
+/* HEADER */
+
 header{
-    background:#0f5132;
+    background:#0b1f1a;
     color:white;
     padding:20px 0;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
 
 .nav-container{
@@ -40,12 +42,14 @@ header{
 }
 
 .logo span{
-    color:#7CFC00;
+    color:#2dd4bf;
 }
 
 .patrocinio{
     font-size:1rem;
 }
+
+/* HERO */
 
 .hero{
     display:flex;
@@ -61,12 +65,12 @@ header{
 
 .hero h1{
     font-size:3rem;
-    color:#0f5132;
+    color:#0b1f1a;
     margin-bottom:15px;
 }
 
 .autora{
-    color:#198754;
+    color:#0f766e;
     font-weight:bold;
     margin-bottom:20px;
 }
@@ -76,12 +80,16 @@ header{
     font-size:1.1rem;
 }
 
+/* IMAGEM */
+
 .hero img{
     width:500px;
     max-width:100%;
     border-radius:20px;
     box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
+
+/* BOTÕES */
 
 .btn{
     display:inline-block;
@@ -94,23 +102,25 @@ header{
 }
 
 .btn-primary{
-    background:#198754;
+    background:#0f766e;
     color:white;
 }
 
 .btn-primary:hover{
-    background:#146c43;
+    background:#115e59;
 }
 
 .btn-secondary{
-    border:2px solid #198754;
-    color:#198754;
+    border:2px solid #0f766e;
+    color:#0f766e;
 }
 
 .btn-secondary:hover{
-    background:#198754;
+    background:#0f766e;
     color:white;
 }
+
+/* SEÇÕES */
 
 section{
     padding:80px 0;
@@ -122,10 +132,12 @@ section{
 }
 
 .section-header h2{
-    color:#0f5132;
+    color:#0b1f1a;
     font-size:2.2rem;
     margin-bottom:10px;
 }
+
+/* EMPRESA */
 
 .empresa{
     background:white;
@@ -138,8 +150,10 @@ section{
     font-size:1.1rem;
 }
 
+/* DADOS */
+
 .dados{
-    background:#0f5132;
+    background:#0b1f1a;
     color:white;
 }
 
@@ -161,8 +175,10 @@ section{
     margin-bottom:10px;
 }
 
+/* PILARES */
+
 .pillars-section{
-    background:#f8f9fa;
+    background:#f8fafc;
 }
 
 .pillars-grid{
@@ -175,7 +191,7 @@ section{
     background:white;
     border-radius:15px;
     overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
     transition:.3s;
 }
 
@@ -194,9 +210,11 @@ section{
 }
 
 .card-body h3{
-    color:#0f5132;
+    color:#0b1f1a;
     margin-bottom:12px;
 }
+
+/* BENEFÍCIOS */
 
 .beneficios{
     background:white;
@@ -204,7 +222,7 @@ section{
 
 .beneficios h2{
     text-align:center;
-    color:#0f5132;
+    color:#0b1f1a;
     margin-bottom:30px;
 }
 
@@ -215,13 +233,15 @@ section{
 }
 
 .beneficios li{
-    background:#f8f9fa;
+    background:#f8fafc;
     margin:12px 0;
     padding:15px;
-    border-left:5px solid #198754;
+    border-left:5px solid #0f766e;
     border-radius:8px;
     font-size:1.05rem;
 }
+
+/* SIMULADOR */
 
 .simulator-box{
     background:white;
@@ -231,7 +251,7 @@ section{
 }
 
 .simulator-controls h3{
-    color:#0f5132;
+    color:#0b1f1a;
     margin-bottom:10px;
 }
 
@@ -241,23 +261,26 @@ section{
 
 .sim-btn{
     border:none;
-    background:#dee2e6;
+    background:#e5e7eb;
     padding:12px 20px;
     border-radius:8px;
     cursor:pointer;
     margin-right:10px;
     margin-top:10px;
     transition:.3s;
+    color:#1f2937;
 }
 
 .sim-btn:hover{
-    background:#ced4da;
+    background:#d1d5db;
 }
 
 .sim-btn.active{
-    background:#198754;
+    background:#0f766e;
     color:white;
 }
+
+/* SIMULADOR DISPLAY */
 
 .simulator-display{
     margin-top:35px;
@@ -267,22 +290,26 @@ section{
 .metrica-valor{
     font-size:4rem;
     font-weight:bold;
-    color:#198754;
+    color:#0f766e;
 }
 
 .metrica-rotulo{
     font-size:1.4rem;
     margin-bottom:15px;
+    color:#374151;
 }
 
 .metric-desc{
     max-width:700px;
     margin:auto;
+    color:#6b7280;
 }
 
+/* FOOTER */
+
 footer{
-    background:#0f5132;
-    color:white;
+    background:#0b1f1a;
+    color:#d1d5db;
     padding:40px 0;
 }
 
@@ -298,6 +325,8 @@ footer{
 .footer-content p{
     margin:8px 0;
 }
+
+/* RESPONSIVO */
 
 @media(max-width:900px){
 

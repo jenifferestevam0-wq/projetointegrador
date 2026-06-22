@@ -314,6 +314,47 @@
         </div>
 
     </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
 
+    const botoes = document.querySelectorAll(".sim-btn");
+    const valor = document.querySelector(".metrica-valor");
+    const descricao = document.querySelector(".metric-desc");
+
+    const dados = {
+        "Sucata de Aço": {
+            valor: "100%",
+            texto: "A sucata de aço pode ser reciclada inúmeras vezes sem perder qualidade, mantendo alta circularidade e reduzindo impactos ambientais."
+        },
+        "Ligas Metálicas": {
+            valor: "85%",
+            texto: "As ligas metálicas possuem boa reciclabilidade, mas podem exigir separação de materiais no processo industrial."
+        },
+        "Energia Reaproveitada": {
+            valor: "70%",
+            texto: "O reaproveitamento de energia reduz desperdícios, mas ainda depende de infraestrutura tecnológica."
+        }
+    };
+
+    botoes.forEach(botao => {
+        botao.addEventListener("click", () => {
+
+            
+            botoes.forEach(b => b.classList.remove("active"));
+
+            
+            botao.classList.add("active");
+
+            // pega o texto do botão
+            const tipo = botao.textContent.trim();
+
+            
+            valor.textContent = dados[tipo].valor;
+            descricao.textContent = dados[tipo].texto;
+        });
+    });
+
+});
+</script>
 </body>
 </html>
